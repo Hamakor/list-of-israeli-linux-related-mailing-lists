@@ -104,7 +104,7 @@ my @lists =
     {
         'id' => "bar-ilan",
         'hostname' => "linux.org.il",
-        'homepage' => "http://www.cs.biu.ac.il/~shadmid/Linux.htm",
+        'homepage' => "http://www.cs.biu.ac.il/biux/",
         'class' => 'ezmlm',
         'title' => "Bar-Ilan University Linux Activities",
         'group_base' => "linux-biu",
@@ -123,7 +123,7 @@ my @lists =
         ),
         'title' => "The Jerusalem Linux Club Activities",
         'guidelines' => ("JLC Activity. General Linux questions are welcome."),
-        'homepage' => "http://jlc.iglu.org.il/",
+        'homepage' => "http://www.jlc.org.il/",
         'online_archive' => sub {
             my $self = shift;
             my $r = shift;
@@ -149,7 +149,6 @@ my @lists =
             $self->render_none($r);
         },
     },
-    
     {
         'id' => 'linux-il-announce',
         'class' => 'listar',
@@ -168,7 +167,7 @@ my @lists =
             $r->url("http://plasma-gate.weizmann.ac.il/Linux/maillists/");
             $r->text("\n");
             $r->text("Mail-archive: ");
-            $r->url("http://www.mail-archive.com/linux-il\@cs.huji.ac.il/");
+            $r->url("http://www.mail-archive.com/linux-il-announce%40cs.huji.ac.il/");
             $r->end_para();
 
         },
@@ -272,27 +271,19 @@ my @lists =
         'description' => ("Discussions, questions and answers regarding the " .
             "Python programming language."),
         'guidelines' => ("Whatever is related to Python."),
-    },
-    {
-        'id' => 'gamla-devel',
-        'class' => 'egroups',
-        'group_base' => 'gamla-devel',
-        'title' => "Gamla Development",
-        'description' => sub {
-            
+        'online_archive' => sub {
             my $self = shift;
             my $r = shift;
-
-            $r->start_para();
-            $r->text("This mailing-list is dedicated to the development of ");
-            $r->url("http://gamla.iglu.org.il/", "Gamla");
-            $r->text(", the RAD and WWW application server for perl.");
-            $r->end_para();
             
-            },
-        'guidelines' => ("Whatever is related to the development and " .
-            "usage of Gamla: discussions, suggestions, questions, " .
-            "answers, ideas, RFCs, and so on."),
+            $r->start_para();
+            $r->text("Mail-Archive: ");
+            $r->url("http://www.mail-archive.com/python%40linux.org.il/");
+            $r->text("\n");
+            $r->text("Gmane: ");
+            $r->url("http://dir.gmane.org/gmane.comp.python.israel");
+            $r->text("\n");
+            $r->end_para();
+        }, 
     },
     {
         'id' => "ivrix-discuss",
@@ -339,6 +330,22 @@ my @lists =
         'online_archive' => "http://mirror.hamakor.org.il/archives/w3c/",
     },
     {
+        'id' => 'hamakor-discussions',
+        'class' => 'hamakor',
+        'hostname' => "hamakor.org.il",
+        'group_base' => 'discussions',
+        'description' => ("Mailing list for general discussion of " . 
+            "Hamakor-related topics."
+        ),
+        'title' => "Hamakor Discussions",
+        'guidelines' => ("Hebrew is preferable. Don't flame, and don't ".
+            "reply to messages that contain trolling. This mailing list " . 
+            "is dedicated to discussions of activities and advocacy. " .
+            "Technical questsions should be directed elsewhere."),
+        'online_archive' => "http://gadot.fdns.net/lurker/list/hamakor-disc.en.html",
+    },
+    
+    {
         'id' => 'haifa-linux-club-projects',
         'class' => 'ezmlm',
         'group_base' => 'lin-prj',
@@ -351,6 +358,27 @@ my @lists =
         'guidelines' => ("Anthing that is related to the Linux Club's Programming Projects"),
         'online_archive' => "http://www.mail-archive.com/lin-prj\@vipe.technion.ac.il/",
     },
+    {
+        'id' => 'gamla-devel',
+        'class' => 'egroups',
+        'group_base' => 'gamla-devel',
+        'title' => "Gamla Development",
+        'description' => sub {
+            
+            my $self = shift;
+            my $r = shift;
+
+            $r->start_para();
+            $r->text("This mailing-list is dedicated to the development of ");
+            $r->url("http://gamla.iglu.org.il/", "Gamla");
+            $r->text(", the RAD and WWW application server for perl.");
+            $r->end_para();
+            
+            },
+        'guidelines' => ("Whatever is related to the development and " .
+            "usage of Gamla: discussions, suggestions, questions, " .
+            "answers, ideas, RFCs, and so on."),
+    },    
 );
 
 sub prolog
