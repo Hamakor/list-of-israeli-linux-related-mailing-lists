@@ -341,9 +341,21 @@ my @lists =
             "reply to messages that contain trolling. This mailing list " . 
             "is dedicated to discussions of activities and advocacy. " .
             "Technical questsions should be directed elsewhere."),
-        'online_archive' => "http://gadot.fdns.net/lurker/list/hamakor-disc.en.html",
-    },
-    
+        'online_archive' => sub {
+            my $self = shift;
+            my $r = shift;
+            
+            $r->start_para();
+            $r->text("Hamakor Archive: ");
+            $r->url("http://mirror.hamakor.org.il/archives/discussions/");
+            $r->text("\n");
+            $r->text("gadot.fdns.net Archive: ");
+            $r->url("http://gadot.fdns.net/lurker/list/hamakor-disc.en.html");
+            $r->text("\n");
+            $r->end_para();
+
+        },
+    },    
     {
         'id' => 'haifa-linux-club-projects',
         'class' => 'ezmlm',
