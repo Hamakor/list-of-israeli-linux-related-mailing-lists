@@ -103,15 +103,14 @@ my @lists =
     },
     {
         'id' => "bar-ilan",
-        'hostname' => "linux.org.il",
+        'class' => 'hamakor',
         'homepage' => "http://www.cs.biu.ac.il/biux/",
-        'class' => 'ezmlm',
         'title' => "Bar-Ilan University Linux Activities",
-        'group_base' => "linux-biu",
+        'group_base' => "biux",
         'description' => ("Mailing-list for announcing, coordinating and " .
             "discussing Linux-related activities in Bar-Ilan University"),
         'guidelines' => ("General Linux questions are welcome (?)"),
-        'online_archive' => "http://www.mail-archive.com/linux-biu\@linux.org.il/",
+        'online_archive' => "http://mirror.hamakor.org.il/archives/biux/",
     },
     {
         'id' => 'iglu-jlc',
