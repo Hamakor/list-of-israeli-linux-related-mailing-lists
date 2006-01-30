@@ -69,8 +69,7 @@ my @lists =
     },
     {
         'id' => 'linux-heb',
-        'hostname' => "linux.org.il",
-        'class' => 'ezmlm',
+        'class' => 'iglu',
         'group_base' => 'linux-heb',
         'description' => ("Linux Discussions and Q&A in Hebrew."
         ),
