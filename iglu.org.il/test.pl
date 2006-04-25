@@ -50,9 +50,13 @@ my @lists =
             $r->text("Mail-archive: ");
             $r->url("http://www.mail-archive.com/linux-il\@cs.huji.ac.il/");
             $r->text("\n");
+            $r->text("Gmane: ");
+            $r->url("http://dir.gmane.org/gmane.linux.region.israel");
+            $r->text("\n");
             $r->text("Plasma-Gate archive: (old messages only)");
             $r->url("http://plasma-gate.weizmann.ac.il/Linux/maillists/");
             $r->text("\n");
+            
             $r->end_para();
 
         },
@@ -75,6 +79,7 @@ my @lists =
         ),
         'title' => "The Hebrew Linux Mailing List",
         'guidelines' => ("Linux discussions, primarily in the Hebrew Language."),
+        'online_archive' => sub { },
     },
     {
         'id' => 'haifa-linux-club',
