@@ -393,7 +393,17 @@ my @lists =
         'guidelines' => ("Whatever is related to the development and " .
             "usage of Gamla: discussions, suggestions, questions, " .
             "answers, ideas, RFCs, and so on."),
-    },    
+    },
+    {
+        'id' => 'hatzor',
+        'class' => 'hamakor',
+        'hostname' => "projects.hamakor.org.il",
+        'group_base' => 'hatzor',
+        'description' => ("Mailing list for discussing the Hatzor project " .
+            "and of integrating Linux in Israeli schools"),
+        'title' => "\"Hatzor Mailing List\"",
+        'guidelines' => ("Whatever related to Linux in education in Israel"),
+    },
 );
 
 sub prolog
