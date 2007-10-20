@@ -144,7 +144,7 @@ my @lists =
         ),
         'title' => "The Tel Aviv Linux Club Discussion List",
         'guidelines' => ("Telux Activity. Hebrew posts are accepted."),
-        'homepage' => "http://www.cs.tau.ac.il/lin-club/advanced-forum.html",
+        'homepage' => "http://www.cs.tau.ac.il/telux/",
         'online_archive' => sub {
             my $self = shift;
             my $r = shift;
@@ -201,7 +201,7 @@ my @lists =
         'group_base' => "bsd-il",
         'description' => ("This is the Israeli mailing list for the " . 
             "BSD-derived operating systems. Discussions regarding FreeBSD, " .            
-            "OpenBSD, NetBSD and BSDi are welcome"),
+            "OpenBSD, NetBSD, etc. are welcome"),
         'guidelines' => "None.",
         'owner' => ["bsd-il-master", "libagent.org"],
         'maintenance-url' => "http://www.libagent.org/mailman/listinfo/bsd-il/",
@@ -221,7 +221,6 @@ my @lists =
     },
     {
         'id' => 'iglu-web',
-        #'class' => 'egroups',
         'class' => 'iglu',
         'title' => "IGLU's Website Adminstration (IGLU-web)",
         'group_base' => 'iglu-web',
@@ -235,8 +234,9 @@ my @lists =
             $r->text(" holds its discussion, announcements and reports here.");
             $r->end_para();
         },
-        'guidelines' => ("Whatever is related to the Israeli Group of Linux " .
-            "Users' web-site. Other messages should be directed to the other " .
+        'guidelines' => ("Whatever is related to the local Israeli" . 
+            "Linux-related web-sites, as maintained by Hamakor. " . 
+            "Other messages should be directed to the other " .
             "lists."),            
     },
     {
@@ -253,9 +253,9 @@ my @lists =
         'title' => "Israeli Perl Mongers List",
         'group_base' => 'perl',
         'description' => ("The Israeli Perl-Mongers list is dedicated to " .
-            "questions, answers and discussions regarding the perl " .
+            "questions, answers and discussions regarding the Perl " .
             "programming language."),
-        'guidelines' => ("Anything that is perl-related is acceptable."),
+        'guidelines' => ("Anything that is Perl-related is acceptable."),
     },
     {
         'id' => 'perl-il-news',
@@ -360,40 +360,6 @@ my @lists =
 
         },
     },    
-    {
-        'id' => 'haifa-linux-club-projects',
-        'class' => 'ezmlm',
-        'group_base' => 'lin-prj',
-        'hostname' => "vipe.technion.ac.il",
-        'homepage' => "http://linuxclub.il.eu.org/",
-        'title' => "Haifa Linux Club's Projects Mailing-list",
-        'description' => ("The Linux Club's programming projects are discussed " . 
-            "here.")
-        ,
-        'guidelines' => ("Anthing that is related to the Linux Club's Programming Projects"),
-        'online_archive' => "http://www.mail-archive.com/lin-prj\@vipe.technion.ac.il/",
-    },
-    {
-        'id' => 'gamla-devel',
-        'class' => 'egroups',
-        'group_base' => 'gamla-devel',
-        'title' => "Gamla Development",
-        'description' => sub {
-            
-            my $self = shift;
-            my $r = shift;
-
-            $r->start_para();
-            $r->text("This mailing-list is dedicated to the development of ");
-            $r->url("http://gamla.iglu.org.il/", "Gamla");
-            $r->text(", the RAD and WWW application server for perl.");
-            $r->end_para();
-            
-            },
-        'guidelines' => ("Whatever is related to the development and " .
-            "usage of Gamla: discussions, suggestions, questions, " .
-            "answers, ideas, RFCs, and so on."),
-    },
     {
         'id' => 'hatzor',
         'class' => 'hamakor',
