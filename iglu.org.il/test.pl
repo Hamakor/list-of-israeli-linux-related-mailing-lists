@@ -267,8 +267,7 @@ my @lists =
     },
     {
         'id' => "python-il",
-        'hostname' => "linux.org.il",
-        'class' => 'ezmlm',
+        'class' => 'hamakor',
         'title' => "Python-IL",
         'group_base' => "python",
         'description' => ("Discussions, questions and answers regarding the " .
@@ -284,6 +283,9 @@ my @lists =
             $r->text("\n");
             $r->text("Gmane: ");
             $r->url("http://dir.gmane.org/gmane.comp.python.israel");
+            $r->text("\n");
+            $r->text("New Posts: ");
+            $r->url("http://hamakor.org.il/pipermail/python-il/");
             $r->text("\n");
             $r->end_para();
         }, 

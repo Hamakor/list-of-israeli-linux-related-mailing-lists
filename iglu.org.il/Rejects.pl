@@ -124,4 +124,27 @@ my @rejects =
         'online_archive' => "http://members.iol.co.il/Tux/linuxology.htm",
         'guidelines' => ("Send Linux News and Interesting URLs."),
     },
+    {
+        'id' => "python-il",
+        'hostname' => "linux.org.il",
+        'class' => 'ezmlm',
+        'title' => "Python-IL",
+        'group_base' => "python",
+        'description' => ("Discussions, questions and answers regarding the " .
+            "Python programming language."),
+        'guidelines' => ("Whatever is related to Python."),
+        'online_archive' => sub {
+            my $self = shift;
+            my $r = shift;
+            
+            $r->start_para();
+            $r->text("Mail-Archive: ");
+            $r->url("http://www.mail-archive.com/python%40linux.org.il/");
+            $r->text("\n");
+            $r->text("Gmane: ");
+            $r->url("http://dir.gmane.org/gmane.comp.python.israel");
+            $r->text("\n");
+            $r->end_para();
+        }, 
+    },    
 );
