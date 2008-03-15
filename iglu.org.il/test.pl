@@ -368,7 +368,7 @@ my @lists =
         'hostname' => "projects.hamakor.org.il",
         'group_base' => 'hatzor',
         'description' => ("Mailing list for discussing the Hatzor project " .
-            "and of integrating Linux in Israeli schools"),
+            "and integrating Linux in Israeli schools"),
         'title' => "\"Hatzor Mailing List\"",
         'guidelines' => ("Whatever related to Linux in education in Israel"),
     },
