@@ -354,10 +354,14 @@ my @lists =
             $r->start_para();
             $r->text("Hamakor Archive: ");
             $r->url("http://mirror.hamakor.org.il/archives/discussions/");
-            $r->text("\n");
+            $r->text(" (old posts only)\n");
+            $r->text("Mailman Archive: ");
+            $r->url("http://hamakor.org.il/pipermail/discussions/");
+            $r->text(" (new posts only)\n");
             $r->text("gadot.fdns.net Archive: ");
             $r->url("http://gadot.fdns.net/lurker/list/hamakor-disc.en.html");
             $r->text("\n");
+
             $r->end_para();
 
         },
