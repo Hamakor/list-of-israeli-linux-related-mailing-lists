@@ -291,6 +291,16 @@ my @lists =
         }, 
     },
     {
+        'id' => 'heb-bugzap',
+        'class' => 'hamakor',
+        'hostname' => "projects.hamakor.org.il",
+        'group_base' => 'heb-bugzap',
+        'description' => ("Discussing, reporting and solving bugs related " .
+            "with Israeli/Hebrew internationalisation (i18n) - " .
+            "Bidirectionality, Right-to-left, niqud, etc."),
+        'title' => "Hebrew Bug Zappers",
+    },    
+    {
         'id' => "ivrix-discuss",
         'class' => 'ivrix',
         'group_base' => "ivrix-discuss",
