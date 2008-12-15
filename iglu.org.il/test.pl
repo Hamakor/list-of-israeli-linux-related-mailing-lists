@@ -269,7 +269,7 @@ my @lists =
         'id' => "python-il",
         'class' => 'hamakor',
         'title' => "Python-IL",
-        'group_base' => "python",
+        'group_base' => "python-il",
         'description' => ("Discussions, questions and answers regarding the " .
             "Python programming language."),
         'guidelines' => ("Whatever is related to Python."),
