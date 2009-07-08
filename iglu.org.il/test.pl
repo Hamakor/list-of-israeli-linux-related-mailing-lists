@@ -405,7 +405,15 @@ sub prolog
         "regarding the information contained here, don't hesitate to " . 
         "contact the maintainer of these pages at the following e-mail: ");
 
-    $main_r->email_address("shlomif", "vipe.technion.ac.il");
+    $main_r->email_address("shlomif", "iglu.org.il");
+
+    $main_r->text(", or in ");
+
+    $main_r->url(
+        "http://www.shlomifish.org/me/contact-me/",
+        "other ways of contacting them."
+    );
+    
     $main_r->end_para();
 }
 
