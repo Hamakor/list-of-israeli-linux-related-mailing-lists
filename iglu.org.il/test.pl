@@ -240,14 +240,6 @@ my @lists =
             "lists."),            
     },
     {
-        'id' => 'perl-starter',
-        'class' => "perl-il",
-        'title' => "Perl Starter",
-        'group_base' => 'starter',
-        'description' => ("A mailing list for Perl beginners."),
-        'guidelines' => ("Anything that is perl-related is acceptable."),
-    },    
-    {
         'id' => 'perl-il',
         'class' => "perl-il",
         'title' => "Israeli Perl Mongers List",

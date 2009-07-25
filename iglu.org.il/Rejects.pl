@@ -147,4 +147,12 @@ my @rejects =
             $r->end_para();
         }, 
     },    
+    {
+        'id' => 'perl-starter',
+        'class' => "perl-il",
+        'title' => "Perl Starter",
+        'group_base' => 'starter',
+        'description' => ("A mailing list for Perl beginners."),
+        'guidelines' => ("Anything that is perl-related is acceptable."),
+    },    
 );
