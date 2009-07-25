@@ -45,7 +45,7 @@ my @lists =
             
             $r->start_para();
             
-            $r->text("Local (cs.huji.ac.il) Archives (New messages only): ");
+            $r->text("Local (cs.huji.ac.il) Archives (new messages only): ");
             $r->url("http://mailman.cs.huji.ac.il/pipermail/linux-il/");
             $r->text("\n");
             $r->text("Hamakor Archive: ");
