@@ -287,6 +287,22 @@ my @lists =
         }, 
     },
     {
+        'id' => 'php-il',
+        'class' => 'mailman',
+        'hostname' => "php-israel.org",
+        'title' => "PHP Israel List",
+        'group_base' => "php-israel",
+        'description' => ("Discussions and Questions about PHP."),
+        'guidelines' => 
+        (
+            "Messages can be written in English and Hebrew." . 
+            "Please trim quoted messages so they E-mail won't be too long.",
+        ),
+        'owner' => ["php-israel-master", "php-israel.org"],
+        'maintenance-url' => "http://php-israel.org/mailman/listinfo/php-israel_php-israel.org",
+        'online_archive' => "http://php-israel.org/pipermail/php-israel_php-israel.org/",
+    }, 
+    {
         'id' => 'heb-bugzap',
         'class' => 'hamakor',
         'hostname' => "projects.hamakor.org.il",
