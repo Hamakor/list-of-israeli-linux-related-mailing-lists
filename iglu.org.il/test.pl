@@ -296,12 +296,24 @@ my @lists =
         'guidelines' => 
         (
             "Messages can be written in English and Hebrew." . 
-            "Please trim quoted messages so they E-mail won't be too long.",
+            "Please trim quoted messages so the E-mails won't be too long.",
         ),
         'owner' => ["php-israel-master", "php-israel.org"],
         'maintenance-url' => "http://php-israel.org/mailman/listinfo/php-israel_php-israel.org",
         'online_archive' => "http://php-israel.org/pipermail/php-israel_php-israel.org/",
-    }, 
+    },
+    {
+        'id' => 'ruby-il',
+        'class' => 'google',
+        'title' => "Ruby-Israel Mailing List (Israel.rb)",
+        'group_base' => "israelrb",
+        'description' => ("Discussions and Questions about Ruby in Israel."),
+        'guidelines' => 
+        (
+            "Messages can be written in English and Hebrew." . 
+            "Please trim quoted messages so the E-mails won't be too long.",
+        ),
+    },
     {
         'id' => 'heb-bugzap',
         'class' => 'hamakor',
