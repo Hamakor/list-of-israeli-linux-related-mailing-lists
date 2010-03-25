@@ -486,8 +486,8 @@ sub epilog
     chomp($version);
 
     $main_r->start_para();
-    $main_r->text("You can download ");
-    $main_r->url("IGLU-Mailing-Lists-" . $version . ".tar.gz", "the perl code that was used to generate these pages");
+    $main_r->text("You can checkout");
+    $main_r->url("https://opensvn.csie.org/linuxisrael/list-of-mailing-lists/trunk/iglu.org.il/", "the perl code that was used to generate these pages from its Subversion repository.");
     $main_r->text(". It depends on the ");
     $main_r->url("http://search.cpan.org/dist/Mail-LMLM/", "the Mail::LMLM CPAN module");
     $main_r->text(".");
