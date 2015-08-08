@@ -510,3 +510,5 @@ chdir($dir);
 
 $renderer->render();
 
+# Remove trailing whitespace.
+system($^X, "-lp", "-i", '-e', 's/\s+$//', glob("*.html"));
