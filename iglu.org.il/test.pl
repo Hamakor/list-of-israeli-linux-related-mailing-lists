@@ -380,7 +380,7 @@ my @lists =
         'guidelines' => ("Hebrew is preferable. Don't flame, and don't ".
             "reply to messages that contain trolling. This mailing list " .
             "is dedicated to discussions of activities and advocacy. " .
-            "Technical questsions should be directed elsewhere."),
+            "Technical questions should be directed elsewhere."),
         'online_archive' => sub {
             my $self = shift;
             my $r = shift;
